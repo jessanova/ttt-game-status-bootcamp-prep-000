@@ -34,7 +34,7 @@ def draw?(board)
 end #draw
 
 def over?
-  won?(board)||full?(board)||draw?(board)
+  won?(board)||full?(board)||TRUE
 end #over
 
 def winner(board)
