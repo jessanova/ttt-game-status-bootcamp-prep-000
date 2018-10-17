@@ -20,15 +20,14 @@ def won?(board)
                    : combo.all?=="O" ? combo
                    : nil
             }
-  
 end #won
 
-def full?
-  
+def full?(board)
+  board.all?{|position| (position=="X")||(position=="O")}
 end #full
 
-def draw?
-  
+def draw?(board)
+  full.board
 end #draw
 
 def over?
