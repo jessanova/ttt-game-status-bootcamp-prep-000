@@ -19,7 +19,7 @@ def won?(board)
   #board.find{|combo| combo.all?{|position| (position=="X")||(position=="O")} ? combo : nil}
   WIN_COMBINATIONS.find{|combo| 
     combo.all?{|position| board[position] == "X"} ||
-    combo.all?{|position| board[poistion] == "O"}
+    combo.all?{|position| board[position] == "O"}
   } 
 end #won
 
