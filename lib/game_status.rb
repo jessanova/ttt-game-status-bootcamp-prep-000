@@ -33,6 +33,9 @@ end #draw
 
 def over?
   board.won=won?()
+  board.full=full?()
+  board.draw=draw?()
+  board.won||board.full||board.draw ? TRUE : nil
 end #over
 
 def winner
