@@ -16,7 +16,7 @@ WIN_COMBINATIONS=[
   ]
   
 def won?(board)
-  board.each{|combo| combo.all?=="X" ? combo 
+  board.first{|combo| combo.all?=="X" ? combo 
                    : combo.all?=="O" ? combo
                    : nil
             }
