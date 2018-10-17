@@ -17,9 +17,9 @@ WIN_COMBINATIONS=[
   
 def won?(board)
   board.each{|combo| combo.all?=="X" ? combo 
-                                     ? 
-    
-  }
+                   : combo.all?=="O" ? combo
+                   : nil
+            }
   
 end #won
 
