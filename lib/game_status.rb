@@ -16,8 +16,8 @@ WIN_COMBINATIONS=[
   ]
   
 def won?(board)
-  board.find{|combo| combo.all?=="X" ? combo 
-                   : combo.all?=="O" ? combo
+  board.find{|combo| combo.all?{|position| position=="X"} ? combo 
+                   : combo.all?{|position| position=="O"} ? combo
                    : nil                    }
 end #won
 
