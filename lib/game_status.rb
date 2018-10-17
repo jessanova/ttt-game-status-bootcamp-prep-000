@@ -39,6 +39,6 @@ end #over
 
 def winner(board)
   #won?(board).all?{|position| position=="X" ? "X" : position=="O" ? "O" : nil }
-  won?(board).all?{|position| board[position] == "X"} ? "X" : return nil
+  won?(board).all?{|position| board[position] == "X"} ? "X" : end
   won?(board).all?{|position| board[position] == "O"} ? "O" : nil
 end #winner
