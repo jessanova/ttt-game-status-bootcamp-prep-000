@@ -33,8 +33,8 @@ def draw?(board)
                 : nil 
 end #draw
 
-def over?
-  won?(board)||full?(board)||draw?(board) ? TRUE : nil
+def over?(board)
+  won?(board)||full?(board)||draw?(board) 
 end #over
 
 def winner(board)
